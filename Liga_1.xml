@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE liga1 SYSTEM "DTD_1.dtd">
+<!DOCTYPE liga1 SYSTEM "https://raw.githubusercontent.com/andrespena9010/XML/main/DTD_1.dtd">
 
 <liga1>
     <partido>
