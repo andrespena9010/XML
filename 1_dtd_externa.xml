@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE libro SYSTEM "">
+<!DOCTYPE libro SYSTEM "https://raw.githubusercontent.com/andrespena9010/XML/main/1_dtd_externa.dtd">
 
 <libro>
   <titulo>el cazador</titulo>
