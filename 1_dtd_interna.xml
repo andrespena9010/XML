@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE libro [
+  <!ELEMENT libro (titulo, autor, ano)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT ano (#PCDATA)>
+]>
+
+<libro>
+  <titulo>el cazador</titulo>
+  <autor>garcia marques</autor>
+  <ano>1995</ano>
+</libro>
