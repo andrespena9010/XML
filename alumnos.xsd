@@ -1,1 +1,55 @@
-sdfds
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno" type="alumno" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>   
+
+  
+
+  <xs:complexType name="alumno">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="direccion" type="direccion" minOccurs="1" maxOccurs="2"/>
+      <xs:element name="telefono" type="xs:integer" minOccurs="1" maxOccurs="5"/>
+    </xs:sequence>
+    <xs:attribute name="dni" type="dni" />
+  </xs:complexType>
+
+  <xs:complexType name="direccion">
+    <xs:sequence>
+      <xs:element name="calle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="numero" type="numero" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ciudad" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="provincia" type="provincia" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  
+
+  <xs:simpleType name="dni">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="numero">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="provincia">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Badajoz"/>
+      <xs:enumeration value="Cáceres"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>
