@@ -8,14 +8,55 @@
         <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
         <xs:element name="apellido" type="xs:string" minOccurs="1" maxOccurs="1"/>
         <xs:element name="edad" type="edad" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="direccion" type="direccion" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="contacto" type="contacto" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>   
+
+  
+
+  <xs:complexType name="direccion">
+    <xs:sequence>
+      <xs:element name="calle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ciudad" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="contacto">
+    <xs:sequence>
+      <xs:element name="email" type="email" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="telefono" type="telefono" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="telefono">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="tipo" type="tipoTelefono" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  
+
   
   <xs:simpleType name="edad">
     <xs:restriction base="xs:integer">
       <xs:minInclusive value="1"/>
       <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="email">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoTelefono">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="movil"/>
+      <xs:enumeration value="fijo"/>
     </xs:restriction>
   </xs:simpleType>
   
