@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XML-XSD_A1_Ej-2.xsd">
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/andrespena9010/XML/raw/main/Persona.xsd">
   <nombre>Juan Manuel</nombre>
   <apellido>Sanchez Casas</apellido>
   <edad>29</edad>
