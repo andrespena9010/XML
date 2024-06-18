@@ -2,7 +2,7 @@
 
 <!DOCTYPE libro SYSTEM "https://raw.githubusercontent.com/andrespena9010/XML/main/1_dtd_externa.dtd">
 
-<libro>
+<libro id="175">
   <titulo>el cazador</titulo>
   <autor>garcia marques</autor>
   <ano>1995</ano>
