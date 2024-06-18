@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!ELEMENT liga1 (partido)*>
-<!ELEMENT partido (equipoLocal, equipoVisitante)>
-<!ELEMENT equipoLocal (nombre, goles)>
-<!ELEMENT equipoVisitante (nombre, goles)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT goles (#PCDATA)>
