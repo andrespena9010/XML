@@ -1,41 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="faq">
+  <xs:element name="persona">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="info" minOccurs="1" maxOccurs="1">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1"/>
-              <xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="1"/>
-              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="version" minOccurs="0" maxOccurs="1">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                  <xs:pattern value="\d+(\.\d+){0,2}"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="date" type="xs:date" minOccurs="0" maxOccurs="1"/>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="part" minOccurs="1" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="q" minOccurs="1" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="qtext" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="a" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
+        <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="apellido" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="edad" type="edad" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
-  </xs:element>
+  </xs:element>   
+  
+  <xs:simpleType name="edad">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
 </xs:schema>
