@@ -1,0 +1,12 @@
+Objetivo: Seleccionar todos los libros que cuestan más de 30 y que fueron publicados después del 2005, ordenados por precio descendente.
+
+XPath Complejo:
+
+/library/book[price > 30 and xs:date(published) > xs:date('2005-01-01')]/descendant::*[name()='title' or name()='price']/..
+
+
+En este caso, usamos varias funciones y condiciones:
+
+    price > 30 selecciona libros con un precio mayor a 30.
+    xs:date(published) > xs:date('2005-01-01') selecciona libros publicados después del 1 de enero de 2005.
+    descendant::*[name()='title' or name()='price']/.. selecciona los títulos y precios de los libros que cumplen con las condiciones.
