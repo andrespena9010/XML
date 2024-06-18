@@ -23,5 +23,5 @@
   </autor>
   <ano>1995</ano>
   <editorial>norma</editorial>
-  <precio moneda="peso" valor="25000">
+  <precio moneda="peso" valor="25000"/>
 </libro>
