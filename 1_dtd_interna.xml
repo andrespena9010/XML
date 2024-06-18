@@ -7,7 +7,7 @@
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT apellido (#PCDATA)>
   <!ELEMENT ano (#PCDATA)>
-  <!ELEMENT editorias (#PCDATA)>
+  <!ELEMENT editorial (#PCDATA)>
   <!ATTLIST libro id CDATA #REQUIRED>
 ]>
 
