@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!ELEMENT libro (titulo, autor, ano)>
+<!ELEMENT libro (titulo, autor, ano, editorial)>
 <!ELEMENT titulo (#PCDATA)>
-<!ELEMENT autor (#PCDATA)>
+<!ELEMENT autor (nombre, apellido)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
 <!ELEMENT ano (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
 <!ATTLIST libro id CDATA #REQUIRED>
