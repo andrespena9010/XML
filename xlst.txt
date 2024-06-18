@@ -1,0 +1,57 @@
+XSLT
+
+Ejemplo Complejo: Transformación con agrupación y plantillas personalizadas
+
+Supongamos el mismo XML de la biblioteca de libros.
+
+Objetivo: Agrupar los libros por autor y crear una tabla HTML que muestre los libros de cada autor, con el total de libros y el precio promedio por autor.
+
+XSLT Complejo:
+
+
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:key name="books-by-author" match="book" use="author" />
+
+    <xsl:template match="/">
+        <html>
+            <body>
+                <h1>Library Books</h1>
+                <xsl:for-each select="library/book[generate-id() = generate-id(key('books-by-author', author)[1])]">
+                    <h2><xsl:value-of select="author"/></h2>
+                    <table border="1">
+                        <tr>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Published</th>
+                        </tr>
+                        <xsl:for-each select="key('books-by-author', author)">
+                            <tr>
+                                <td><xsl:value-of select="title"/></td>
+                                <td><xsl:value-of select="price"/></td>
+                                <td><xsl:value-of select="published"/></td>
+                            </tr>
+                        </xsl:for-each>
+                        <tr>
+                            <td colspan="3">
+                                Total Books: <xsl:value-of select="count(key('books-by-author', author))"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Average Price: <xsl:value-of select="format-number(sum(key('books-by-author', author)/price) div count(key('books-by-author', author)), '0.00')"/>
+                            </td>
+                        </tr>
+                    </table>
+                </xsl:for-each>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
+
+
+Este XSLT hace lo siguiente:
+
+    Define una clave books-by-author para agrupar los libros por autor.
+    Utiliza xsl:for-each para iterar sobre autores únicos.
+    Dentro del ciclo, utiliza otra xsl:for-each para iterar sobre los libros de cada autor.
+    Calcula y muestra el total de libros y el precio promedio por autor.
