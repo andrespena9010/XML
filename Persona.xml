@@ -8,4 +8,8 @@
     <calle>Juan pere</calle>
     <ciudad>Madrid</ciudad>
   </direccion>
+  <contacto>
+    <mail>lksdngfv@hoo.com</mail>
+    <telefono>638425954</telefono>
+  </contacto>
 </persona>
