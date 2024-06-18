@@ -16,7 +16,7 @@
     <xs:sequence>
       <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
       <xs:element name="direccion" type="direccion" minOccurs="1" maxOccurs="2"/>
-      <xs:element name="telefono" type="xs:integer" minOccurs="1" maxOccurs="5"/>
+      <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5"/>
     </xs:sequence>
     <xs:attribute name="dni" type="dni" />
   </xs:complexType>
