@@ -1,0 +1,26 @@
+<library>
+    <book>
+        <title>Learning XML</title>
+        <author>Erik T. Ray</author>
+        <price>39.95</price>
+        <published>2003-02-01</published>
+    </book>
+    <book>
+        <title>Programming Python</title>
+        <author>Mark Lutz</author>
+        <price>59.99</price>
+        <published>2010-03-14</published>
+    </book>
+    <book>
+        <title>Head First Java</title>
+        <author>Kathy Sierra</author>
+        <price>29.95</price>
+        <published>2005-06-22</published>
+    </book>
+    <book>
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <price>45.00</price>
+        <published>2008-05-28</published>
+    </book>
+</library>
