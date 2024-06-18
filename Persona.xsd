@@ -54,7 +54,7 @@
   </xs:simpleType>
 
   <xs:simpleType name="tipoTelefono">
-    <xs:restriction base="xs:integer">
+    <xs:restriction base="xs:string">
       <xs:enumeration value="movil"/>
       <xs:enumeration value="fijo"/>
     </xs:restriction>
