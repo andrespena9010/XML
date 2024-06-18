@@ -9,9 +9,12 @@
   <!ELEMENT ano (#PCDATA)>
   <!ELEMENT editorial (#PCDATA)>
   <!ATTLIST libro id CDATA #REQUIRED>
+  <!ATTLIST libro idioma CDATA #REQUIRED>
+  <!ATTLIST precio moneda CDATA #REQUIRED>
+  <!ATTLIST precio valor CDATA #REQUIRED>
 ]>
 
-<libro id="175">
+<libro id="175" idioma="español">
   <titulo>el cazador</titulo>
   <autor>
     <nombre>gabriel</nombre>
@@ -19,4 +22,5 @@
   </autor>
   <ano>1995</ano>
   <editorial>norma</editorial>
+  <precio moneda="peso" valor="25000">
 </libro>
