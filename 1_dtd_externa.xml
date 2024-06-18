@@ -4,6 +4,10 @@
 
 <libro id="175">
   <titulo>el cazador</titulo>
-  <autor>garcia marques</autor>
+  <autor>
+    <nombre>gabriel</nombre>
+    <apellido>garcia marques</apellido>
+  </autor>
   <ano>1995</ano>
+  <editorial>norma</editorial>
 </libro>
