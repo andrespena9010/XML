@@ -10,6 +10,6 @@
   </direccion>
   <contacto>
     <mail>lksdngfv@hoo.com</mail>
-    <telefono>638425954</telefono>
+    <telefono tipo="movil">638425954</telefono>
   </contacto>
 </persona>
