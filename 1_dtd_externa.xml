@@ -2,7 +2,7 @@
 
 <!DOCTYPE libro SYSTEM "https://raw.githubusercontent.com/andrespena9010/XML/main/1_dtd_externa.dtd">
 
-<libro id="175">
+<libro id="175" idioma="español">
   <titulo>el cazador</titulo>
   <autor>
     <nombre>gabriel</nombre>
@@ -10,4 +10,5 @@
   </autor>
   <ano>1995</ano>
   <editorial>norma</editorial>
+  <precio moneda="peso" valor="25000"/>
 </libro>
