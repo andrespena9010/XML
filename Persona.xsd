@@ -11,6 +11,7 @@
         <xs:element name="direccion" type="direccion" minOccurs="1" maxOccurs="1"/>
         <xs:element name="contacto" type="contacto" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute name="id" type="xs:integer" />
     </xs:complexType>
   </xs:element>   
 
