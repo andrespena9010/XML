@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE libro [
-  <!ELEMENT libro (titulo, autor, ano)>
+  <!ELEMENT libro (titulo, autor, ano, editorial)>
   <!ELEMENT titulo (#PCDATA)>
   <!ELEMENT autor (nombre, apellido)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT apellido (#PCDATA)>
   <!ELEMENT ano (#PCDATA)>
+  <!ELEMENT editorias (#PCDATA)>
   <!ATTLIST libro id CDATA #REQUIRED>
 ]>
 
