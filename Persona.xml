@@ -9,7 +9,7 @@
     <ciudad>Madrid</ciudad>
   </direccion>
   <contacto>
-    <mail>lksdngfv@hoo.com</mail>
+    <email>lksdngfv@hoo.com</email>
     <telefono tipo="movil">638425954</telefono>
   </contacto>
 </persona>
