@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<alumnos>
+
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/andrespena9010/XML/raw/main/alumnos.xsd">
  <alumno dni="11771111A">
     <nombre>Juan Andrés</nombre>
     <direccion>
