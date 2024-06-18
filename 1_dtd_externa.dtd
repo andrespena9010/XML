@@ -4,3 +4,4 @@
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT autor (#PCDATA)>
 <!ELEMENT ano (#PCDATA)>
+<!ATTLIST libro id CDATA #REQUIRED>
