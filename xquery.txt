@@ -1,0 +1,31 @@
+XQuery
+
+Ejemplo Complejo: Consultas avanzadas con funciones y agregaciones
+
+Supongamos que tenemos el mismo XML de la biblioteca de libros.
+
+Objetivo: Calcular el precio promedio de los libros, agruparlos por autor, y devolver una lista de autores con el número de libros publicados por cada uno, ordenados por el número de libros en orden descendente.
+
+XQuery Complejo:
+
+
+let $books := //book
+let $avgPrice := avg($books/price)
+for $author in distinct-values($books/author)
+let $authorBooks := $books[author = $author]
+order by count($authorBooks) descending
+return <author>
+    <name>{ $author }</name>
+    <numBooks>{ count($authorBooks) }</numBooks>
+    <avgPrice>{ $avgPrice }</avgPrice>
+</author>
+
+
+Este XQuery realiza las siguientes operaciones:
+
+    Define $books como todos los elementos book.
+    Calcula el precio promedio de los libros con avg($books/price).
+    Itera sobre cada autor único en $books/author.
+    Define $authorBooks como los libros escritos por el autor actual.
+    Ordena los resultados por el número de libros que cada autor ha escrito (count($authorBooks)) en orden descendente.
+    Devuelve un elemento <author> con el nombre del autor, el número de libros y el precio promedio.
