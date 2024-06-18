@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/andrespena9010/XML/raw/main/Persona.xsd">
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/andrespena9010/XML/raw/main/Persona.xsd" id="126">
   <nombre>Juan Manuel</nombre>
   <apellido>Sanchez Casas</apellido>
   <edad>29</edad>
+  <direccion>
+    <calle>Juan pere</calle>
+    <ciudad>Madrid</ciudad>
+  </direccion>
 </persona>
