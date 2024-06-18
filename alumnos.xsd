@@ -34,7 +34,7 @@
 
   <xs:simpleType name="dni">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[A-Z]"/>
+      <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][A-Z]"/>
     </xs:restriction>
   </xs:simpleType>
 
