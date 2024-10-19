@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<especies>
+  <especie identificador="1" estado="amenazado">
+    <nombre nombre-cientifico="Monachus monachus">Foca monje</nombre>
+    <familia>Phocidae</familia>
+    <distribucion>
+      <zona>Costa Atlántica</zona>
+      <zona>Costa Mediterránea</zona>
+    </distribucion>
+  </especie>
+  <especie identificador="2" estado="amenazado">
+    <nombre nombre-cientifico="Panthera onca">Jaguar</nombre>
+    <familia>Felidae</familia>
+    <distribucion>
+      <zona>América Central</zona>
+      <zona>América del Sur</zona>
+    </distribucion>
+  </especie>
+  <especie identificador="3" estado="sin-peligro">
+    <nombre nombre-cientifico="Chelonia mydas">Tortuga verde</nombre>
+    <familia>Cheloniidae</familia>
+    <distribucion>
+      <zona>Océano Atlántico</zona>
+      <zona>Océano Pacífico</zona>
+    </distribucion>
+  </especie>
+</especies>
