@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE especies SYSTEM "especies.dtd">
+<!DOCTYPE especies SYSTEM "https://raw.githubusercontent.com/andrespena9010/XML/refs/heads/main/especies.dtd">
 
 <especies>
   <especie identificador="1" estado="amenazado">
