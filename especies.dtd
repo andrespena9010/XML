@@ -7,5 +7,5 @@
 <!ELEMENT distribucion (zona+)>
 <!ELEMENT zona (#PCDATA)>
 <!ATTLIST especie identificador CDATA #REQUIRED>
-<!ATTLIST estado estado (extinto | amenazado | sin-peligro) #REQUIRED>
+<!ATTLIST especie estado (extinto | amenazado | sin-peligro) #REQUIRED>
 <!ATTLIST nombre nombre-cientifico CDATA #REQUIRED>
