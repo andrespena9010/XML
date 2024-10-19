@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE especies SYSTEM "especies.dtd">
+
 <especies>
   <especie identificador="1" estado="amenazado">
     <nombre nombre-cientifico="Monachus monachus">Foca monje</nombre>
