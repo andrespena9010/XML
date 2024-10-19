@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!ELEMENT especies (especie+)>
+<!ELEMENT especie (nombre, familia, distribucion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT familia (#PCDATA)>
+<!ELEMENT distribucion (zona+)>
+<!ELEMENT zona (#PCDATA)>
