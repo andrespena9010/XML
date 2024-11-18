@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<receta 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/andrespena9010/XML/refs/heads/main/receta.xsd"
+    raciones="6" dificultad="media">
+    <nombre>Tortilla</nombre>
+	<ingredientes>
+		<ingrediente cantidad="1" unidad="kilogramo">Patata</ingrediente>
+		<ingrediente cantidad="8" unidad="unidades">Huevo</ingrediente>
+		<ingrediente cantidad="1" unidad="unidades">Cebolla</ingrediente>
+		<ingrediente>Aceite de oliva</ingrediente>
+		<ingrediente>Sal</ingrediente>
+	</ingredientes>
+	<elaboracion>Se pelan las patatas...</elaboracion>
+</receta>
