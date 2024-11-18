@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="temperatura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="provincia" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="fecha" type="xs:date" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="temperatura_minima" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:double">
+                            <xs:minInclusive value="-50"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="temperatura_maxima" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:double">
+                            <xs:maxInclusive value="50"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="incidencias" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="incidencia" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="frio"/>
+                                                <xs:enumeration value="nieve"/>
+                                                <xs:enumeration value="lluvia"/>
+                                                <xs:enumeration value="calor"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="severidad">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="alta"/>
+                                                <xs:enumeration value="media"/>
+                                                <xs:enumeration value="baja"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+</xs:schema>
