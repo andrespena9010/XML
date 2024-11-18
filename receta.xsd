@@ -10,14 +10,14 @@
                         <xs:sequence>
                             <xs:element name="ingrediente" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
                         </xs:sequence>
-                        <xs:attribute name="cantidad" type="xs:integer"/>
-                        <xs:attribute name="unidad" type="xs:string"/>
+                        <xs:attribute name="cantidad" type="xs:integer" use="optional"/>
+                        <xs:attribute name="unidad" type="xs:string" use="optional"/>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="elaboracion" type="xs:string"/>
             </xs:sequence>
-            <xs:attribute name="raciones" type="xs:integer"/>
-            <xs:attribute name="dificultad" type="xs:string"/>
+            <xs:attribute name="raciones" type="xs:integer" use="required"/>
+            <xs:attribute name="dificultad" type="xs:string" use="required"/>
         </xs:complexType>
     </xs:element>
 </xs:schema>
